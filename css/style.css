@@ -1,0 +1,278 @@
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayitalic';
+    src: url('../fonts/raleway-italic-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('../fonts/raleway-thin-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: 'ralewayregular';
+}
+
+.main_width {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.uppercase_me {
+  text-transform: uppercase;
+}
+
+.bold_me {
+  font-family: 'ralewaybold';
+}
+
+.light_me {
+  font-family: 'ralewaythin';
+}
+
+h1 {
+  margin: 0;
+}
+
+.header_bg{
+  background-color: #000;
+  color: #fff;
+}
+
+.header_property {
+  position: relative;
+}
+
+.header_logo {
+  font-size: 15px;
+  padding: 15px 0;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  font-size: 15px;
+}
+
+.menu_item {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.colorize {
+  color: rgb(0, 186, 161);
+}
+
+.st_section_bg{
+  margin-top: 4px;
+  height: 370px;
+  background: linear-gradient(180deg, rgb(250, 250, 250), rgb(204, 203, 208));
+}
+
+.content_img {
+  float: left;
+}
+
+.content {
+  float: left;
+  width: 350px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.content_text {
+  font-size: 13px;
+  line-height: 20px;
+  color: rgb(128, 128, 128);
+}
+
+.content_link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: rgb(0, 186, 161);
+  color: #fff;
+  text-decoration: none;
+}
+
+.nd_section_bg{
+  clear:both;
+  margin-top: 30px;
+}
+
+.box_text {
+  margin-top: 150px;
+  padding: 15px 0 20px;
+  background-color: rgba(255, 255, 255, 0.5);;
+}
+
+.box_name {
+  display: inline-block;
+  margin-left: 20px;
+  width: 135px;
+  border-bottom: 4px solid rgb(0, 186, 161);
+}
+
+.nd_section_box1{
+  display: inline-block;
+  vertical-align: top;
+  background-image: url('../img/box1_img.jpg');
+  background-repeat: no-repeat;
+  width: 329px;
+  height: 225px;
+}
+
+.nd_section_box2{
+  display: inline-block;
+  vertical-align: top;
+  background: url('../img/box2_img.jpg');
+  background-repeat: no-repeat;
+  width: 329px;
+  height: 225px;
+}
+
+.nd_section_box3{
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 30px;
+  border: 1px solid rgb(236, 236, 236);;
+  width: 329px;
+  height: 250px;
+}
+
+.box3_header {
+  margin-top: 20px;
+}
+
+.box3_content {
+  margin: 10px 20px;
+  line-height: 20px;
+  font-size: 13px;
+  color: rgb(128, 128, 128);
+}
+
+.rd_section_bg {
+  background-color: rgb(241, 241, 241);
+}
+
+.segment_header {
+  display: inline-block;
+  width: 329px;
+  margin: 50px 0 80px 0;
+  border-bottom: 4px solid rgb(0, 186, 161);
+}
+
+.pay_panel{
+  position: relative;
+  width: 329px;
+  height: 450px;
+  border: 1px solid rgb(214, 214, 214);
+  background-color: rgb(249, 249, 249);
+  text-align: center;
+}
+
+.pay_panel_circle_out{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  width: 60px;
+  height: 60px;
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 50%;
+  background-color: rgb(249, 249, 249);
+}
+
+.pay_panel_circle_ins{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(214, 214, 214);
+}
+
+.plan_name {
+  margin-top: 35px;
+}
+
+.price_circle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  border: 2px solid rgb(214, 214, 214);
+  border-radius: 50%;
+  background-color: rgb(249, 249, 249);
+}
+
+.inactive_price {
+  margin-top: 20px;
+  font-size: 30px;
+  color: rgb(195, 195, 195);
+}
+
+.price_curr {
+  font-size: 16px;
+}
+
+.plan_options {
+  display: inline-block;
+  width: 100%;
+  margin-top: 150px;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.grey_bg {
+  margin: 0;
+  background-color: rgb(208, 208, 208);
+}
+.lightgrey_bg {
+  margin: 0;
+  background-color: rgb(241, 241, 241);
+}
+
+.panel_btn {
+  position: absolute;
+  bottom: 20px;
+  transform: translateX(-50%);
+  padding: 10px 40px;
+  border-radius: 5px;
+  background-color: rgb(0, 186, 161);
+  text-decoration: none;
+  color: #fff;
+}
