@@ -3,52 +3,59 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
-    <title>Sit on chair</title>
+    <title>Sit On Chair</title>
   </head>
   <body>
 
-    <header class="header_bg">
-      <section class="main_width header_property uppercase_me">
-        <h1 class="header_logo">Sit <span class="colorize">on</span> chair</h1>
+    <header class="header">
+      <section class="main_width">
+        <span class="logo font_uppercase">Sit <span class="font_bold font_colorize">On</span> Chair</span>
         <nav>
-          <ul class="menu">
-            <li class="menu_item">O firmie</li>
+          <ul class="menu font_uppercase font_bold">
+            <li class="menu_item">O firmie
+              <ul class="hidden_menu">
+                <li>Aktualności</li>
+                <li>Nasz team</li>
+                <li>Historia</li>
+              </ul>
+            </li>
             <li class="menu_item">Galeria</li>
             <li class="menu_item">Kontakt</li>
           </ul>
-        </nav>
       </section>
     </header>
 
-    <section class="st_section_bg">
+    <section class="slider">
       <section class="main_width">
-        <img class="content_img" src="img/black_chair.png" alt="black chair" />
-        <div class="content ">
-          <h2 class="uppercase_me">Sit <span class="colorize">on</span> our <span class="colorize">chair</span></h2>
-          <p class="content_text">
+        <span class="slider_prev font_colorize">&lt;</span>
+        <span class="slider_next font_colorize">&gt;</span>
+        <div class="slider_img"></div>
+        <div class="slider_column">
+          <h1 class="font_uppercase">Sit <span class="font_bold font_colorize">on</span> our <span class="font_bold font_colorize">chair</span></h1>
+          <p class="slider_column_par font_light">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
           </p>
-          <a class="content_link uppercase_me" href="#">Zobacz więcej</a>
+          <a href="#" class="slider_column_btn font_uppercase">Zobacz więcej</a>
         </div>
       </section>
     </section>
 
-    <section class="nd_section_bg">
+    <section class="gallery">
       <section class="main_width">
-        <div class="nd_section_box1">
+        <div class="box1">
           <p class="box_text">
-            <span class="box_name">Chair <span class="uppercase_me">clair</span></span>
+            <span class="box_name font_semibold">Chair <span class="font_uppercase">clair</span></span>
           </p>
         </div>
-        <div class="nd_section_box2">
+        <div class="box2">
             <p class="box_text">
-              <span class="box_name">Chair <span class="uppercase_me">margarita</span></span>
+              <span class="box_name font_semibold">Chair <span class="font_uppercase">margarita</span></span>
             </p>
         </div>
-        <div class="nd_section_box3">
-          <span class="box_name box3_header">Finds all inputs</span>
+        <div class="box3">
+          <span class="box_name box3_header font_semibold ">Finds all inputs</span>
           <p class="box3_content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
           </p>
           <p class="box3_content">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -57,80 +64,107 @@
       </section>
     </section>
 
-    <section class="rd_section_bg">
+    <section class="price">
       <section class="main_width">
-        <h3 class="segment_header uppercase_me">Cennik</h3>
+        <h2 class="title font_uppercase">Cennik</h2>
+        <div class="price_panels">
 
-        <div class="pay_panel">
-          <div class="pay_panel_circle_out">
-            <div class="pay_panel_circle_ins">
+          <div class="panel1">
+            <div class="price_panel">
+              <div class="big_circle">
+                <div class="small_circle"></div>
+              </div>
+              <h3 class="font_uppercase font_colorize">Basic plan</h3>
+              <div class="price_circle">
+                <span class="plan_value font_bold">85<sup>99</sup></span>
+                <span class="plan_currency font_bold font_uppercase">pln/msc</span>
+              </div>
+              <ul class="plan_options">
+                <li class="plan_option">Zakup towaru + dowóz</li>
+                <li class="plan_option">Serwis</li>
+              </ul>
+              <a href="#" class="panel_btn font_uppercase">Dołącz</a>
             </div>
           </div>
-          <h3 class="plan_name uppercase_me colorize">Basic plan</h3>
-          <div class="price_circle">
-            <div class="inactive_price">
-              <span class="bold_me">85<sup>99</sup></span>
-              <span class="uppercase_me price_curr">pln/msc</span>
-            </div>
-          </div>
-          <div class="plan_options light_me">
-            <p class="grey_bg">
-                Zakup towaru + dowóz
-            </p>
-            <p class="lightgrey_bg">
-                Serwis
-            </p>
-          </div>
-          <a class="uppercase_me panel_btn" href="#">Dołącz</a>
-        </div>
 
-        <div class="pay_panel">
-          <div class="pay_panel_circle_out">
-            <div class="pay_panel_circle_ins">
+          <div class="panel2">
+            <div class="price_panel">
+              <div class="big_circle">
+                <div class="small_circle"></div>
+              </div>
+              <h3 class="font_uppercase font_colorize">Standard plan</h3>
+              <div class="price_circle">
+                <span class="plan_value font_bold">95<sup>99</sup></span>
+                <span class="plan_currency font_bold font_uppercase">pln/msc</span>
+              </div>
+              <ul class="plan_options">
+                <li class="plan_option">Zakup towaru + dowóz</li>
+                <li class="plan_option">Serwis</li>
+                <li class="plan_option">Gwarancja 5 lat</li>
+              </ul>
+              <a href="#" class="panel_btn font_uppercase">Dołącz</a>
             </div>
           </div>
-          <h3 class="plan_name uppercase_me colorize">Basic plan</h3>
-          <div class="price_circle">
-            <div class="inactive_price">
-              <span class="bold_me">95<sup>99</sup></span>
-              <span class="uppercase_me price_curr">pln/msc</span>
-            </div>
-          </div>
-          <div class="plan_options light_me">
-            <p class="grey_bg">
-                Zakup towaru + dowóz
-            </p>
-            <p class="lightgrey_bg">
-                Serwis
-            </p>
-          </div>
-          <a class="uppercase_me panel_btn" href="#">Dołącz</a>
-        </div>
 
-        <div class="pay_panel">
-          <div class="pay_panel_circle_out">
-            <div class="pay_panel_circle_ins">
+            <div class="panel3">
+              <div class="price_panel">
+                <div class="big_circle">
+                  <div class="small_circle"></div>
+                </div>
+                <h3 class="font_uppercase font_colorize">Advance plan</h3>
+                <div class="price_circle">
+                  <span class="plan_value font_bold">211<sup>00</sup></span>
+                  <span class="plan_currency font_bold font_uppercase">pln/msc</span>
+                </div>
+                <ul class="plan_options">
+                  <li class="plan_option">Zakup towaru + dowóz</li>
+                  <li class="plan_option">Serwis</li>
+                  <li class="plan_option">Gwarancja 6 lat</li>
+                  <li class="plan_option">Porady projektanta</li>
+                </ul>
+                <a href="#" class="panel_btn font_uppercase">Dołącz</a>
+              </div>
             </div>
-          </div>
-          <h3 class="plan_name uppercase_me colorize">Basic plan</h3>
-          <div class="price_circle">
-            <div class="inactive_price">
-              <span class="bold_me">85<sup>99</sup></span>
-              <span class="uppercase_me price_curr">pln/msc</span>
-            </div>
-          </div>
-          <div class="plan_options light_me">
-            <p class="grey_bg">
-                Zakup towaru + dowóz
-            </p>
-            <p class="lightgrey_bg">
-                Serwis
-            </p>
-          </div>
-          <a class="uppercase_me panel_btn" href="#">Dołącz</a>
+
         </div>
       </section>
     </section>
+
+    <section class="contact">
+      <section class="main_width">
+        <h2 class="title font_uppercase">Kontakt</h2>
+        <form>
+          <div class="textfields">
+            <input class="textfield font_light" type="text" name="name" value="" placeholder="Imię">
+            <input class="textfield font_light" type="text" name="email" value="" placeholder="E-mail">
+            <textarea class="textfield font_light" rows="5" placeholder="Wiadomość"></textarea>
+          </div>
+          <div class="form_img"></div>
+          <div class="submit_col">
+            <div class="checkbox"></div>
+            <div class="checkbox_text font_light">
+              Zgadzam się na przetwarzanie danych osobowych
+            </div>
+            <input class="form_btn font_bold font_uppercase" type="submit" name="name" value="Wyślij">
+          </div>
+        </form>
+      </section>
+    </section>
+
+    <footer class="footer">
+      <section class="main_width">
+        <span class="copyright">Copyrigth 2014 | All Rigths Reserved - Sit On Chair</span>
+
+        <div class="social">
+          <img src="images/flickr.png" alt="Flickr" />
+          <img src="images/vimeo.png" alt="Vimeo" />
+          <img src="images/pinterest.png" alt="Pinterest" />
+          <img src="images/twitter.png" alt="Twitter" />
+        </div>
+
+        <span class="footer_logo font_uppercase">Sit <span class="font_bold">On</span> Chair</span>
+      </section>
+    </footer>
 
   </body>
 </html>
