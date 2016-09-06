@@ -63,6 +63,7 @@ body {
 
 .title {
     display: inline-block;
+    font-size: 24px;
     width: 330px;
     margin: 45px 0;
     border-bottom: 5px solid #24ba9f;
@@ -360,6 +361,7 @@ body {
 
 .price_panel h3 {
     margin-top: 30px;
+    font-size: 25px;
 }
 
 .price_circle {
@@ -379,17 +381,23 @@ body {
 .plan_value {
     display: inline-block;
     font-size: 40px;
-    margin-top: 15px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.superscript {
+    font-size: 16px;
+    vertical-align: top;
 }
 
 .plan_currency {
     display: inline-block;
     font-size: 15px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .plan_options {
-    margin-top: 195px;
+    margin-top: 185px;
     list-style-type: none;
     padding-left: 0;
     font-size: 24px;
@@ -419,6 +427,7 @@ body {
     font-size: 18px;
     text-decoration: none;
 }
+
 
 /*contact*/
 
