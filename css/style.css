@@ -76,13 +76,15 @@ body {
     color: #fff;
 }
 
-.header section {
+.header header {
     position: relative;
 }
 
 .logo {
     display: inline-block;
     margin: 12px 0;
+    color: #fff;
+    text-decoration: none;
 }
 
 .menu {
@@ -495,7 +497,7 @@ body {
     height: 80px;
 }
 
-.footer section {
+.footer footer {
     position: relative;
     margin-top: 50px;
 }
