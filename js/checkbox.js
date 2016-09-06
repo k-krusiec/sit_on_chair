@@ -4,9 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var hidden = document.querySelector('.hidden');
 
   checkbox.addEventListener('click', function(e) {
-
     hidden.classList.toggle('hidden');
-
   })
 
 })
