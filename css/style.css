@@ -78,7 +78,7 @@ body {
     color: #fff;
 }
 
-.header header {
+.header > div {
     position: relative;
 }
 
@@ -160,7 +160,7 @@ body {
     /* IE6-9 */
 }
 
-.slider section {
+.slider > div {
     position: relative;
 }
 
@@ -225,7 +225,7 @@ body {
     height: 310px;
 }
 
-.gallery section {
+.gallery > div {
     position: relative;
     margin-top: 27px;
 }
@@ -420,7 +420,7 @@ body {
 
 .contact {}
 
-.contact section {
+.contact > div {
     position: relative;
 }
 
@@ -497,7 +497,7 @@ body {
     height: 80px;
 }
 
-.footer footer {
+.footer > div {
     position: relative;
     margin-top: 50px;
 }
