@@ -3,10 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
   var panels = document.querySelectorAll('.price_panel');
   var basicGreen = '#24ba9f';
   var basicWhite = '#fff';
-  var basicGrey = '#f9f9f9';
-  var borderGrey = '#d9d9d9';
-  var textGrey = '#c2c2c2';
-  var tabGrey = '#e4e4e4';
 
   function mouseOverColor() {
     this.style.backgroundColor = basicGreen;
@@ -29,23 +25,23 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function mouseOutColor() {
-    this.style.backgroundColor = basicGrey;
-    this.style.borderColor = borderGrey;
-    this.firstElementChild.style.backgroundColor = basicWhite;
-    this.firstElementChild.style.borderColor = borderGrey;
-    this.firstElementChild.firstElementChild.style.backgroundColor = borderGrey;
-    this.firstElementChild.firstElementChild.style.borderColor = borderGrey;
-    this.children[1].style.color = basicGreen;
-    this.children[2].style.borderColor = borderGrey;
-    this.children[2].firstElementChild.style.color = textGrey;
-    this.children[2].lastElementChild.style.color = textGrey;
+    this.style.backgroundColor = '';
+    this.style.borderColor = '';
+    this.firstElementChild.style.backgroundColor = '';
+    this.firstElementChild.style.borderColor = '';
+    this.firstElementChild.firstElementChild.style.backgroundColor = '';
+    this.firstElementChild.firstElementChild.style.borderColor = '';
+    this.children[1].style.color = '';
+    this.children[2].style.borderColor = '';
+    this.children[2].firstElementChild.style.color = '';
+    this.children[2].lastElementChild.style.color = '';
     for (var j = 0, len2 = this.children[3].children.length; j < len2; j++) {
       if (!(j % 2)) {
-        this.children[3].children[j].style.backgroundColor = tabGrey;
+        this.children[3].children[j].style.backgroundColor = '';
       }
     }
-    this.lastElementChild.style.backgroundColor = basicGreen;
-    this.lastElementChild.style.color = basicWhite;
+    this.lastElementChild.style.backgroundColor = '';
+    this.lastElementChild.style.color = '';
   }
 
   for (var i = 0, len = panels.length; i < len; i++) {
