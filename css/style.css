@@ -169,10 +169,6 @@ body {
     position: absolute;
     top: 80px;
     left: 20px;
-    box-sizing: border-box;
-    width: 470px;
-    height: 337px;
-    background: url('../images/black_chair.png') no-repeat;
 }
 
 .slider_column {
@@ -205,17 +201,18 @@ body {
 
 .slider_prev, .slider_next {
     font-size: 100px;
+    z-index: 1;
 }
 
 .slider_prev {
     position: absolute;
-    margin-top: 180px;
+    padding: 180px 0 203px;
 }
 
 .slider_next {
     position: absolute;
     right: 0;
-    margin-top: 180px;
+    padding: 180px 0 203px;
 }
 
 
