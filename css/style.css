@@ -61,7 +61,7 @@ body {
     text-transform: uppercase;
 }
 
-.title {
+.titleh2 {
     display: inline-block;
     font-size: 24px;
     width: 330px;
@@ -202,6 +202,11 @@ body {
 .slider_prev, .slider_next {
     font-size: 100px;
     z-index: 1;
+}
+
+.slider_prev a, .slider_next a {
+    text-decoration: none;
+    color: #24ba9f;
 }
 
 .slider_prev {
