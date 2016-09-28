@@ -35,9 +35,44 @@ document.addEventListener('DOMContentLoaded', function() {
 
       chairTitle = dropDownLists[0].children[0].innerText;
       chairColor = dropDownLists[1].children[0].innerText;
-      chairPatern = dropDownLists[0].children[0].innerText;
+      chairPatern = dropDownLists[2].children[0].innerText;
+
+      console.log(chairTitle);
 
       summaryPanelLeft.children[0].innerText = chairTitle;
+      if (chairTitle === 'Wybierz rodzaj') {
+        summaryPanelLeft.children[0].innerText = 'Twój fotel';
+        summaryPanelRight.children[0].innerText = '';
+      } else if (chairTitle === 'Clair') {
+        summaryPanelRight.children[0].innerText = 200;
+      } else if (chairTitle === 'Margarita') {
+        summaryPanelRight.children[0].innerText = 300;
+      } else {
+        summaryPanelRight.children[0].innerText = 400;
+      }
+
+      summaryPanelLeft.children[1].innerText = chairColor;
+      if (chairColor === 'Wybierz kolor') {
+        summaryPanelLeft.children[1].innerText = '';
+        summaryPanelRight.children[1].innerText = '';
+      } else if (chairColor === 'Czerwony') {
+        summaryPanelRight.children[1].innerText = 0;
+      } else if (chairColor === 'Czarny') {
+        summaryPanelRight.children[1].innerText = 20;
+      } else {
+        summaryPanelRight.children[1].innerText = 100;
+      }
+
+      summaryPanelLeft.children[2].innerText = chairPatern;
+      if (chairPatern === 'Wybierz materiał') {
+        summaryPanelLeft.children[2].innerText = '';
+        summaryPanelRight.children[2].innerText = '';
+      } else if (chairPatern === 'Tkanina') {
+        summaryPanelRight.children[2].innerText = 250;
+      } else {
+        summaryPanelRight.children[2].innerText = 300;
+      }
+
     })
 
   }
