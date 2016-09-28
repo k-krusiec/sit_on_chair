@@ -415,8 +415,6 @@ body {
 
 /*contact*/
 
-.contact {}
-
 .contact > div {
     position: relative;
 }
@@ -449,35 +447,21 @@ body {
     display: inline-block;
     vertical-align: top;
     width: 342px;
-    margin-top: 230px;
+    padding-top: 195px;
     margin-left: 50px;
 }
 
-.checkbox_img {
+.check-box .checkbox_text {
     display: inline-block;
-    box-sizing: border-box;
-    padding-top: 5px;
-    width: 50px;
-    height: 50px;
-    border: 1px solid #24ba9f;
-}
-
-.hidden {
-  visibility: hidden;
-}
-
-.checkbox_text {
-    display: inline-block;
-    vertical-align: top;
     font-size: 18px;
+    line-height: 20px;
+    margin-top: -5px;
     margin-left: 15px;
-    margin-top: 2px;
     width: 273px;
 }
 
 .form_btn {
     display: block;
-    margin-top: 35px;
     width: 342px;
     background-color: #24ba9f;
     border: none;
