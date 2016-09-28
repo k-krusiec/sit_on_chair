@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var dropItems = document.querySelectorAll('.list_panel li');
   var summaryPanelLeft = document.querySelector('.panel_left');
   var summaryPanelRight = document.querySelector('.panel_right');
+  var transportChkBox = document.querySelector('#transport');
   var chairTitle = '';
   var chairColor = '';
   var chairPatern = '';
@@ -77,6 +78,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
   }
 
+  transportChkBox.addEventListener('click', function() {
+    if (transportChkBox.checked) {
+      summaryPanelLeft.children[3].innerText = 'Transport';
+      summaryPanelRight.children[3].innerText = transportChkBox.dataset.transportPrice;
+    } else {
+      summaryPanelLeft.children[3].innerText = '';
+      summaryPanelRight.children[3].innerText = '';
+    }
 
+  })
 
 })
