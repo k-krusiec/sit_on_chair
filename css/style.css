@@ -639,10 +639,17 @@ body {
   z-index: 2;
   position: absolute;
   top: 54px;
-  display:none;
+  display: none;
 }
+
+.show {
+  display: block;
+}
+
 .list_panel li {
   margin-top:10px;
+  width: 255px;
+  padding: 5px 10px;
   cursor: pointer;
   color: #585858;
 }
