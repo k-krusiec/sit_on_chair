@@ -1,18 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
 
   var dropListArrows = document.querySelectorAll('.list_arrow');
-  var dropDownLists = document.querySelectorAll('.drop_down_list');
   var dropItems = document.querySelectorAll('.list_panel li');
+
+  var dropDownLists = document.querySelectorAll('.drop_down_list');
   var summaryPanelLeft = document.querySelector('.panel_left');
   var summaryPanelRight = document.querySelector('.panel_right');
+  var values = document.querySelectorAll('.value');
   var transportChkBox = document.querySelector('#transport');
+  var sum = document.querySelector('.sum').firstElementChild;
   var chairTitle = '';
   var chairColor = '';
   var chairPatern = '';
+  var total;
+  var price;
 
   for (var i = 0, len = dropListArrows.length; i < len; i++) {
     dropListArrows[i].addEventListener('click', function() {
-      //this.parentElement.lastElementChild.style.display = 'block';
       this.parentElement.lastElementChild.classList.toggle('show');
     })
   }
@@ -29,16 +33,16 @@ document.addEventListener('DOMContentLoaded', function() {
     dropItems[i].addEventListener('click', function() {
       console.log(this.innerText);
       console.log(this.parentElement.parentElement.firstElementChild);
+      total = 0;
       var dropText = this.parentElement.parentElement.firstElementChild;
       dropText.style.color = 'black';
       dropText.innerText = this.innerText;
       this.parentElement.classList.remove('show');
 
+      //nazwa zmiennej = nr dropa, tf w dropie, tekst
       chairTitle = dropDownLists[0].children[0].innerText;
       chairColor = dropDownLists[1].children[0].innerText;
       chairPatern = dropDownLists[2].children[0].innerText;
-
-      console.log(chairTitle);
 
       summaryPanelLeft.children[0].innerText = chairTitle;
       if (chairTitle === 'Wybierz rodzaj') {
@@ -73,9 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
       } else {
         summaryPanelRight.children[2].innerText = 300;
       }
-
     })
-
   }
 
   transportChkBox.addEventListener('click', function() {
@@ -86,7 +88,13 @@ document.addEventListener('DOMContentLoaded', function() {
       summaryPanelLeft.children[3].innerText = '';
       summaryPanelRight.children[3].innerText = '';
     }
-
   })
+
+  function dupa() {
+    for (var i = 0, len = values.length; i < len; i++) {
+      console.log(values[i]);
+    }
+  }
+
 
 })
