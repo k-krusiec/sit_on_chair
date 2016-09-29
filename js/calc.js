@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var total;
   var price;
 
+  sum.innerText = 0;
   for (var i = 0, len = dropListArrows.length; i < len; i++) {
     dropListArrows[i].addEventListener('click', function() {
       this.parentElement.lastElementChild.classList.toggle('show');
@@ -43,58 +44,80 @@ document.addEventListener('DOMContentLoaded', function() {
       chairTitle = dropDownLists[0].children[0].innerText;
       chairColor = dropDownLists[1].children[0].innerText;
       chairPatern = dropDownLists[2].children[0].innerText;
-
+      var x = 0, y = 0, z = 0;
+      var type = 0, color = 0, patern = 0;
       summaryPanelLeft.children[0].innerText = chairTitle;
       if (chairTitle === 'Wybierz rodzaj') {
+        x = 0;
         summaryPanelLeft.children[0].innerText = 'Twój fotel';
         summaryPanelRight.children[0].innerText = '';
       } else if (chairTitle === 'Clair') {
-        summaryPanelRight.children[0].innerText = 200;
+        x = 200;
+        summaryPanelRight.children[0].innerText = x;
       } else if (chairTitle === 'Margarita') {
-        summaryPanelRight.children[0].innerText = 300;
+        x = 300;
+        summaryPanelRight.children[0].innerText = x;
       } else {
-        summaryPanelRight.children[0].innerText = 400;
+        x = 400;
+        summaryPanelRight.children[0].innerText = x;
       }
-
+      type = x;
+      console.log('type' + type);
       summaryPanelLeft.children[1].innerText = chairColor;
       if (chairColor === 'Wybierz kolor') {
+        y = 0;
         summaryPanelLeft.children[1].innerText = '';
         summaryPanelRight.children[1].innerText = '';
       } else if (chairColor === 'Czerwony') {
-        summaryPanelRight.children[1].innerText = 0;
+        y = 0;
+        summaryPanelRight.children[1].innerText = y;
       } else if (chairColor === 'Czarny') {
-        summaryPanelRight.children[1].innerText = 20;
+        y = 50;
+        summaryPanelRight.children[1].innerText = y;
       } else {
-        summaryPanelRight.children[1].innerText = 100;
+        y = 100;
+        summaryPanelRight.children[1].innerText = y;
       }
-
+      color = y;
+      console.log('color' + color);
       summaryPanelLeft.children[2].innerText = chairPatern;
       if (chairPatern === 'Wybierz materiał') {
+        z = 0;
         summaryPanelLeft.children[2].innerText = '';
         summaryPanelRight.children[2].innerText = '';
       } else if (chairPatern === 'Tkanina') {
-        summaryPanelRight.children[2].innerText = 250;
+        z = 250;
+        summaryPanelRight.children[2].innerText = z;
       } else {
-        summaryPanelRight.children[2].innerText = 300;
+        z = 300;
+        summaryPanelRight.children[2].innerText = z;
       }
+      patern = z;
+      console.log(patern);
+      total = 0;
+      total = x + y + z;
+      console.log('total: ' + total);
+      sum.innerText = total;
     })
   }
 
   transportChkBox.addEventListener('click', function() {
+    var a = 0;
     if (transportChkBox.checked) {
       summaryPanelLeft.children[3].innerText = 'Transport';
       summaryPanelRight.children[3].innerText = transportChkBox.dataset.transportPrice;
+      a = transportChkBox.dataset.transportPrice;
+      console.log('aaa ' + a);
     } else {
       summaryPanelLeft.children[3].innerText = '';
       summaryPanelRight.children[3].innerText = '';
+      a = -1 * transportChkBox.dataset.transportPrice;
     }
+
+    total = Number(total) + Number(a);
+    console.log('tttttottttal: ' + total);
+    sum.innerText = '';
+    sum.innerText = total;
   })
-
-  function dupa() {
-    for (var i = 0, len = values.length; i < len; i++) {
-      console.log(values[i]);
-    }
-  }
-
 
 })
