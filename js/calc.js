@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
       summaryPanelRight.children[2].innerText = arr[5];
     }
 
-    sum.innerText = total();
+    sum.innerText = total() + ' zł';
 
   }
 
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
       summaryPanelRight.children[3].innerText = '';
     }
 
-    sum.innerText = total();
+    sum.innerText = total() + ' zł';
   }
 
   function total() {
